@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/color"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
+	"github.com/mjuen/pdfcpu/pkg/api"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/color"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/model"
 )
 
 // Acrobat Reader "Bookmarks" = Mac Preview "Table of Contents".

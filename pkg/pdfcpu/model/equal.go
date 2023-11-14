@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
 )
 

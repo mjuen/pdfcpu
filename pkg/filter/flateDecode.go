@@ -21,7 +21,7 @@ import (
 	"compress/zlib"
 	"io"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
+	"github.com/mjuen/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
 )
 

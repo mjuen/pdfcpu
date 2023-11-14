@@ -24,12 +24,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/color"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/draw"
-	pdffont "github.com/pdfcpu/pdfcpu/pkg/pdfcpu/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/mjuen/pdfcpu/pkg/font"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/color"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/draw"
+	pdffont "github.com/mjuen/pdfcpu/pkg/pdfcpu/font"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/model"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
 )
 

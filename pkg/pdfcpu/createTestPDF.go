@@ -23,9 +23,9 @@ import (
 	"fmt"
 	"path/filepath"
 
-	pdffont "github.com/pdfcpu/pdfcpu/pkg/pdfcpu/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	pdffont "github.com/mjuen/pdfcpu/pkg/pdfcpu/font"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/model"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/types"
 )
 
 var (

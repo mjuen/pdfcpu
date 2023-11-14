@@ -23,8 +23,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/model"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/types"
 )
 
 var (

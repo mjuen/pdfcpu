@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/mjuen/pdfcpu/pkg/font"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/types"
 )
 
 const (
@@ -293,12 +293,15 @@ func NewDefaultConfiguration() *Configuration {
 		return &c
 	}
 	if ConfigPath != "disable" {
-		path = os.TempDir()
+		path := os.TempDir()
 		println(path)
-		if err = EnsureDefaultConfigAt(path); err == nil {
+
+		err := EnsureDefaultConfigAt(path)
+		if err == nil {
 			c := *loadedDefaultConfig
 			return &c
 		}
+
 		fmt.Fprintf(os.Stderr, "pdfcpu: config dir problem: %v\n", err)
 		os.Exit(1)
 	}

@@ -1,24 +1,23 @@
 builds:
-- main: ./cmd/pdfcpu
-  env:
-    - CGO_ENABLED=0
-  ldflags:
-     - '-s -w -X main.version={{.Version}} -X github.com/pdfcpu/pdfcpu/pkg/pdfcpu.VersionStr={{.Version}} -X main.commit={{.ShortCommit}} -X main.date={{.Date}} -X main.builtBy=goreleaser'
-  goos:
-    - ios
-    - js
-    - linux
-    - darwin
-    - windows
-  goarch:
-    - "386"
-    - arm64
-    - wasm
-    - amd64
+  - main: ./cmd/pdfcpu
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - "-s -w -X main.version={{.Version}} -X github.com/mjuen/pdfcpu/pkg/pdfcpu.VersionStr={{.Version}} -X main.commit={{.ShortCommit}} -X main.date={{.Date}} -X main.builtBy=goreleaser"
+    goos:
+      - ios
+      - js
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - "386"
+      - arm64
+      - wasm
+      - amd64
 dist: ./dist
 archives:
-  -
-    format: tar.xz
+  - format: tar.xz
     format_overrides:
       - goos: windows
         format: zip
@@ -34,12 +33,12 @@ archives:
       {{- if .Arm }}v{{ .Arm }}{{ end -}}
     wrap_in_directory: true
 checksum:
-  name_template: 'checksums.txt'
+  name_template: "checksums.txt"
 snapshot:
   name_template: "{{ .Tag }}-next"
 changelog:
   sort: asc
   filters:
     exclude:
-    - '^docs:'
-    - '^test:'
+      - "^docs:"
+      - "^test:"

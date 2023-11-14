@@ -27,10 +27,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/create"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/form"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
+	"github.com/mjuen/pdfcpu/pkg/log"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/create"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/form"
+	"github.com/mjuen/pdfcpu/pkg/pdfcpu/model"
 	"github.com/pkg/errors"
 )
 
