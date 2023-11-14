@@ -293,10 +293,7 @@ func NewDefaultConfiguration() *Configuration {
 		return &c
 	}
 	if ConfigPath != "disable" {
-		path, err := os.UserConfigDir()
-		if err != nil {
-			path = os.TempDir()
-		}
+		path = os.TempDir()
 		println(path)
 		if err = EnsureDefaultConfigAt(path); err == nil {
 			c := *loadedDefaultConfig
